@@ -1,0 +1,33 @@
+# Defaults for all kinds of source code
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Python project file
+# For compatibity with creation/editing tools
+[pyproject.toml]
+charset = utf-8
+indent_size = 4
+indent_style = space
+
+# Copier project file
+# For compatibity with creation/editing tools
+[copier.yml]
+charset = utf-8
+indent_size = 4
+indent_style = space
+
+# Specific language overrides
+[*.{yml,yaml,json}]
+indent_size = 2
+
+[*.{plist,mobileconfig}]
+indent_style = tab
+indent_size = tab
+
+[*.{diff,md}]
+trim_trailing_whitespace = false
